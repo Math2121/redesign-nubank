@@ -8,6 +8,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap"
     rel="stylesheet">
+  <script src="script/svg-inject.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Projeto Nubank</title>
 </head>
@@ -21,13 +22,21 @@
 
     <nav class="navbar-mobile">
       <div class="bx" id="bx"></div>
-      <div class="logo"></div>
+      <div class="logo">
+        <a href="">
+          <img src="svg/logonu.svg" alt="" onload="SVGInject(this)">
+        </a>
+      </div>
       <a href="">Login</a>
     </nav>
     <!--====NAVBAR DESKTOP======-->
     <nav class="navbar-desktop">
       <div class="navbar-desktop-1">
-        <div class="logo"></div>
+        <div class="logo">
+          <a href="">
+            <img src="svg/logonu.svg" alt="" onload="SVGInject(this)">
+          </a>
+        </div>
         <ul class="menu-desktop">
           <li class="menu-desktop-item" id="menu-item-1">
             <a href="" class="nav-link-desktop">Nubank</a>
@@ -53,7 +62,7 @@
             </ul>
           </li>
 
-          <li class="menu-desktop-item"  id="menu-item-3">
+          <li class="menu-desktop-item" id="menu-item-3">
             <a href="" class="nav-link-desktop">Para você</a>
             <ul class="dropdown-menu-desktop" id="dropdown-item-3">
               <li class="dropdown-item-desktop"><a href="" class="nav-link-dropdown-desktop">Comunidade</a>
@@ -74,8 +83,8 @@
       </div>
 
     </nav>
-<!--====NAVBAR MOBILE======-->
-    <nav class="menu-mobile">
+    <!--====NAVBAR MOBILE======-->
+    <nav class="menu-mobile" id="menu-mobile">
       <ul class="nav-list-mobile">
         <li>
           <a href="" class="nav-link-mobile">Nubank</a>
@@ -93,14 +102,34 @@
           <a href="" class="nav-link-mobile">Quero ser Nubank</a>
         </li>
 
-     
+        <li>
+          <a href="" class="nav-link-mobile">Redes Sociais</a>
+        </li>
+        <li class="mt-3">
+
+          <a href="">
+            <img src="svg/icon-facebook.svg" alt="" onload="SVGInject(this)">
+          </a>
+          <a href="">
+            <img src="svg/icon-youtube.svg" alt="" onload="SVGInject(this)">
+          </a>
+          <a href="">
+            <img src="svg/icon-instagram.svg" alt="" onload="SVGInject(this)">
+          </a>
+          <a href="">
+            <img src="svg/icon-twitter.svg" alt="" onload="SVGInject(this)">
+          </a>
+
+        </li>
+
+
       </ul>
     </nav>
   </header>
 
 
 
-<script src="script/index.js"></script>
+  <script src="script/index.js"></script>
 </body>
 
 </html>
