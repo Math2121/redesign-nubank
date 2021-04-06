@@ -11,13 +11,13 @@ $height-card: 0.64 * $width-card;
 .card {
     width: $width-card;
     height: $height-card;
-z-index: -1;
+    z-index: -1;
     border-radius: 12px;
     transform-origin: center center;
     transform-style: preserve-3d;
 
-   
-    animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate ;
+
+    animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
 }
 
 @keyframes flip-card {
@@ -38,54 +38,98 @@ z-index: -1;
     }
 }
 
-@keyframes change-bg-card{
-    0%,40%{
+@keyframes change-bg-card {
+
+    0%,
+    40% {
         background-image: url('../../svg/nubank.svg');
         background-size: cover;
     }
 
-    50%,100%{
+    50%,
+    100% {
         background-image: url('../../svg/nubank-verse.svg');
         background-size: cover;
     }
 }
 
-.icon-card-hero{
+.icon-card-hero {
     position: absolute;
     top: -0px;
     z-index: 200;
     left: -30px;
-    animation:icons-hero 7s ease 0.5s infinite alternate;
+    animation: icons-hero 7s ease 0.5s infinite alternate;
 }
 
 
-.icon-contactless-hero{
+.icon-contactless-hero {
     position: absolute;
     top: 350px;
     z-index: 200;
     left: 30px;
-    animation:icons-hero 7s ease 1s infinite alternate;
+    animation: icons-hero 7s ease 1s infinite alternate;
 }
 
 
 
-.icon-mobile-hero{
+.icon-mobile-hero {
     position: absolute;
     top: 150px;
     z-index: 200;
     left: -250px;
-@include responsive(s) {
-    top: 350px;
-    left: -100px;
-}
+
+    @include responsive(s) {
+        top: 350px;
+        left: -100px;
+    }
+
     animation:icons-hero 7s ease 2.5s infinite alternate;
 }
 
-@keyframes icons-hero{
-    0%{
-        transform:translate3d(0, 0, 0)
-    }  
-    100%{
-        transform:translate3d(10px, -40px, 0)
+@keyframes icons-hero {
+    0% {
+        transform: translate3d(0, 0, 0)
+    }
+
+    100% {
+        transform: translate3d(10px, -40px, 0)
+    }
+}
+
+.bg-home-blur1 {
+    transform: translate3d(0, -100px, 0)
+}
+
+.bg-home-blur2 {
+    transform: translate3d(0, -150px, 0)
+}
+
+
+.bg-home-rect1 {
+    animation: bg-home-rect 3s ease 0s infinite alternate;
+}
+
+
+.bg-home-rect2 {
+    animation: bg-home-rect 3s ease 0.5s infinite alternate;
+}
+
+
+.bg-home-rect3 {
+    animation: bg-home-rect 3s ease 1s infinite alternate;
+}
+
+
+.bg-home-rect4 {
+    animation: bg-home-rect 3s ease 1.5s infinite alternate;
+}
+
+@keyframes bg-home-rect {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 30px, 0)
     }
 }

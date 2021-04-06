@@ -3,7 +3,7 @@ a {
     text-decoration: none;
     transition: .5s ease;
     color: $black-normal;
-
+cursor: pointer;
     &:hover {
         opacity: .9;
     }

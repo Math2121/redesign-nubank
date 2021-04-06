@@ -144,6 +144,24 @@
   }
 }
 
+.bg-home {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.svg-bg-home {
+  width: 150%;
+}
+
+@media screen and (min-width: 1440px) {
+  .svg-bg-home {
+    width: 100%;
+  }
+}
+
 h1 {
   color: #232224;
   font-family: 'Sora', sans-serif;
@@ -271,6 +289,7 @@ a {
   -webkit-transition: .5s ease;
   transition: .5s ease;
   color: #232224;
+  cursor: pointer;
 }
 
 a:hover {
@@ -350,15 +369,15 @@ header {
   -webkit-box-shadow: none;
           box-shadow: none;
   position: fixed;
+  height: 72px;
   z-index: 9999;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   background: transparent;
-  height: auto;
 }
 
 .active-header {
-  background: #F3F0F5;
+  background-color: #F3F0F5;
   -webkit-box-shadow: 0px 51px 80px rgba(169, 80, 196, 0.08), 0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271), 0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04), 0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729);
           box-shadow: 0px 51px 80px rgba(169, 80, 196, 0.08), 0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271), 0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04), 0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729);
 }
@@ -769,22 +788,26 @@ header {
 }
 
 @-webkit-keyframes change-bg-card {
-  0%, 40% {
+  0%,
+  40% {
     background-image: url("../../svg/nubank.svg");
     background-size: cover;
   }
-  50%, 100% {
+  50%,
+  100% {
     background-image: url("../../svg/nubank-verse.svg");
     background-size: cover;
   }
 }
 
 @keyframes change-bg-card {
-  0%, 40% {
+  0%,
+  40% {
     background-image: url("../../svg/nubank.svg");
     background-size: cover;
   }
-  50%, 100% {
+  50%,
+  100% {
     background-image: url("../../svg/nubank-verse.svg");
     background-size: cover;
   }
@@ -843,6 +866,58 @@ header {
   100% {
     -webkit-transform: translate3d(10px, -40px, 0);
             transform: translate3d(10px, -40px, 0);
+  }
+}
+
+.bg-home-blur1 {
+  -webkit-transform: translate3d(0, -100px, 0);
+          transform: translate3d(0, -100px, 0);
+}
+
+.bg-home-blur2 {
+  -webkit-transform: translate3d(0, -150px, 0);
+          transform: translate3d(0, -150px, 0);
+}
+
+.bg-home-rect1 {
+  -webkit-animation: bg-home-rect 3s ease 0s infinite alternate;
+          animation: bg-home-rect 3s ease 0s infinite alternate;
+}
+
+.bg-home-rect2 {
+  -webkit-animation: bg-home-rect 3s ease 0.5s infinite alternate;
+          animation: bg-home-rect 3s ease 0.5s infinite alternate;
+}
+
+.bg-home-rect3 {
+  -webkit-animation: bg-home-rect 3s ease 1s infinite alternate;
+          animation: bg-home-rect 3s ease 1s infinite alternate;
+}
+
+.bg-home-rect4 {
+  -webkit-animation: bg-home-rect 3s ease 1.5s infinite alternate;
+          animation: bg-home-rect 3s ease 1.5s infinite alternate;
+}
+
+@-webkit-keyframes bg-home-rect {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 30px, 0);
+            transform: translate3d(0, 30px, 0);
+  }
+}
+
+@keyframes bg-home-rect {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 30px, 0);
+            transform: translate3d(0, 30px, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */
