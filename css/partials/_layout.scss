@@ -3,39 +3,131 @@
 $container-xl:1440px;
 $containrer-l:1140px;
 $container-m:960px;
-$container-s:540px;
+$container-s:340px;
 
 //Mixins
 
-@mixin responsive($device){
-  @if $device == xl {
+@mixin responsive($device) {
+  @if $device==xl {
     @media screen and (min-width:$container-xl) {
       @content;
     }
   }
 
-   @else if $device == l {
+  @else if $device==l {
     @media screen and (max-width:$container-xl) and (min-width:$container-l) {
-       @content;
+      @content;
     }
   }
 
 
-   @else if $device ==  m {
+  @else if $device==m {
     @media screen and (max-width:$container-l) and (min-width:$container-m) {
-       @content;
+      @content;
     }
   }
 
-   @else if $device ==  s {
+  @else if $device==s {
     @media screen and (max-width:$container-m) and (min-width:$container-s) {
-       @content;
+      @content;
     }
   }
 
-  @else if $device ==  xs {
+  @else if $device==xs {
     @media screen and (max-width:$container-s) {
-       @content;
+      @content;
     }
+  }
+}
+
+.container {
+  max-width: $container-xl;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 96px 24px;
+  overflow: hidden;
+
+  @include responsive(s) {
+    flex-direction: column;
+    padding: 32px 18px;
+
+  }
+}
+.flex-start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.flex-column{
+  flex-direction: column;
+}
+.relative{
+  position: relative;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.flex-item-1{
+  flex: 1 1 360px;
+}
+.flex-item-2{
+  flex: 2 1 360px;
+}
+.flex-item-3{
+  flex: 3 1 360px;
+}
+.flex-item-4{
+  flex: 4 1 360px;
+}
+.flex-item-5{
+  flex: 5 1 360px;
+}
+.flex-item-auto{
+  flex-basis: auto;
+}
+.w-auto{
+  width: auto;
+
+}
+
+.w-100{
+  width: 100%;
+}
+
+.w-75{
+  width: 75%;
+}
+
+
+.w-50{
+  width: 50%;
+}
+
+
+
+.w-25{
+  width: 25%;
+}
+
+
+.hidden{
+  overflow: hidden;
+}
+.hero{
+  height: 90vh;
+  @include responsive(s){
+    height: auto ;
   }
 }

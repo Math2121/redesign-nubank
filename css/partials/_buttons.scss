@@ -2,7 +2,8 @@ a {
     @include typeface-2(p2, desktop);
     text-decoration: none;
     transition: .5s ease;
-color: $black-normal;
+    color: $black-normal;
+
     &:hover {
         opacity: .9;
     }
@@ -11,6 +12,7 @@ color: $black-normal;
 .btn {
     background: linear-gradient(220.94deg, $secondary-normal 14.43%, $primary-normal 85.28%);
     border-radius: 16px;
+    margin-right: 1rem;
     transition: .3s ease;
     padding: 12px 32px;
     color: $white-light;

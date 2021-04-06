@@ -5,6 +5,7 @@ header {
     z-index: 9999;
     transition: .5s ease;
     background: transparent;
+ 
 }
 
 .active-header {
@@ -33,7 +34,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-z-index:800 ;
+    z-index: 800;
 }
 
 .navbar-desktop-1 {
@@ -253,6 +254,24 @@ z-index:800 ;
     list-style: none;
     display: flex;
     flex-direction: column;
+
+    svg {
+        width: 36px;
+        height: 36px;
+
+        path {
+            stroke: $gray-7;
+
+            transition: .7s ease;
+
+        }
+
+        &:hover {
+            path {
+                stroke: $primary-normal;
+            }
+        }
+    }
 
 }
 

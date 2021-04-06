@@ -3,3 +3,25 @@ $gap-2:16px;
 $gap-3:48px;
 $gap-4:72px;
 $gap-5:128px;
+
+.mx-1{
+    margin-right: $gap-1;
+}
+.my-1{
+    margin-top: $gap-1;
+}
+.ml-1{
+    margin-left: $gap-1;
+}
+.my-2{
+    margin-top: $gap-2;
+}
+.mb-1{
+    margin-bottom: $gap-1;
+}
+.py-4{
+    padding-top: $gap-4;
+}
+.py-5{
+    padding-top: $gap-5;
+}
