@@ -10,6 +10,8 @@
     rel="stylesheet">
   <script src="script/svg-inject.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>Projeto Nubank</title>
 </head>
 
@@ -190,51 +192,116 @@
     </div>
     <div class="flex-item-1 flex-column mx-2 my-3">
       <img src="svg/svg-people2.svg" class="mx-2 my-2" id="people2" alt=" " onload="SVGInject(this)">
-      <img src="svg/svg-people3.svg"  class="mx-2 my-2"  alt=" " onload="SVGInject(this)">
+      <img src="svg/svg-people3.svg" class="mx-2 my-2" alt=" " onload="SVGInject(this)">
     </div>
   </section>
 
 
- <!--======================= SECTION BEST==================== -->
+  <!--======================= SECTION BEST==================== -->
 
 
-<section class="container">
-  <div class="best px-3 py-4">
-    <div class="flex-item-auto">
-      <h5>O melhor </h5>
-      <h2>Por que Nubank?</h2>
+  <section class="container">
+    <div class="best px-3 py-4">
+      <div class="flex-item-auto">
+        <h5>O melhor </h5>
+        <h2>Por que Nubank?</h2>
+      </div>
+      <div class="best-item flex-item-auto">
+        <img src="svg/icon-cash.svg" class="w-auto  icon" alt=" " onload="SVGInject(this)">
+        <p class="my-2 bold">Conta rende mais que a poupança</p>
+      </div>
+      <div class="best-item flex-item-auto">
+        <img src="svg/icon-transfer.svg" class="w-auto  icon" alt=" " onload="SVGInject(this)">
+        <p class="my-2 bold">Transferências e
+          TEDs ilimitadas</p>
+      </div>
+      <div class="best-item flex-item-auto">
+        <img src="svg/icon-card.svg" class="w-auto  icon" alt=" " onload="SVGInject(this)">
+        <p class="my-2 bold">Conta e cartão
+          100% gratuitos</p>
+      </div>
+      <div class="best-item flex-item-auto">
+        <img src="svg/icon-phone.svg" class="w-auto  icon" alt=" " onload="SVGInject(this)">
+        <p class="my-2 bold">O melhor suporte 24h do Brasil</p>
+      </div>
     </div>
-    <div class="best-item flex-item-auto">
-      <img src="svg/icon-cash.svg" class="w-auto  icon"  alt=" " onload="SVGInject(this)">
-      <p class="my-2 bold">Conta rende mais que a poupança</p>
-    </div>
-    <div class="best-item flex-item-auto">
-      <img src="svg/icon-transfer.svg" class="w-auto  icon"  alt=" " onload="SVGInject(this)">
-      <p class="my-2 bold">Transferências e 
-        TEDs ilimitadas</p>
-    </div>
-    <div class="best-item flex-item-auto">
-      <img src="svg/icon-card.svg" class="w-auto  icon"  alt=" " onload="SVGInject(this)">
-      <p class="my-2 bold">Conta e cartão 
-        100% gratuitos</p>
-    </div>
-    <div class="best-item flex-item-auto">
-      <img src="svg/icon-phone.svg" class="w-auto  icon"  alt=" " onload="SVGInject(this)">
-      <p class="my-2 bold">O melhor suporte 24h do Brasil</p>
-    </div>
-  </div>
-</section>
+  </section>
 
 
+  <!--======================= SECTION CARROSEL================== -->
 
+  <section class="box">
+    <h5>Depoimentos</h5>
+    <h2>Todos amam o roxinho</h2>
+  </section>
+  <section class="container-swiper">
+    <section class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="photo-profile photo-1">
 
+          </div>
+          <h4>Jorge Kely</h4>
+          <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quas totam doloremque culpa repudiandae
+            asperiores rem veritatis numquam! Dolor quam illo</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="photo-profile photo-2"></div>
+          <h4>Jorge Kely</h4>
+          <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quas totam doloremque culpa repudiandae
+            asperiores rem veritatis numquam! Dolor quam illo</p>
+        </div>
 
+        <div class="swiper-slide">
+          <div class="photo-profile photo-3"></div>
+          <h4>Jorge Kely</h4>
+          <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quas totam doloremque culpa repudiandae
+            asperiores rem veritatis numquam! Dolor quam illo</p>
+        </div>
 
+        <div class="swiper-slide">
+          <div class="photo-profile photo-4"></div>
+          <h4>Jorge Kely</h4>
+          <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quas totam doloremque culpa repudiandae
+            asperiores rem veritatis numquam! Dolor quam illo</p>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="photo-profile photo-5"></div>
+          <h4>Jorge Kely</h4>
+          <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quas totam doloremque culpa repudiandae
+            asperiores rem veritatis numquam! Dolor quam illo</p>
+        </div>
+
+      </div>
+    </section>
+    <div class="button-next"></div>
+    <div class="button-prev"></div>
+  </section>
 
 
 
 
   <script src="script/index.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    let swipper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 40,
+      grapCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'progressbar'
+      },
+      navigation: {
+        nextEl: '.button-next',
+        prevEl: '.button-prev'
+      }
+    });
+  </script>
 </body>
 
 </html>
