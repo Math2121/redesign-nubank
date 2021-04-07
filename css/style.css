@@ -184,6 +184,75 @@
   height: 64px;
 }
 
+.best {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 50px;
+  background-color: #F3F0F5;
+}
+
+@media screen and (max-width: 960px) and (min-width: 340px) {
+  .best {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.best:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 124px;
+  height: 32px;
+  background-image: url("../../svg/entail.svg");
+  background-repeat: no-repeat;
+}
+
+.best-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 16px;
+  margin: 8px 0px;
+}
+
+@media screen and (max-width: 960px) and (min-width: 340px) {
+  .best-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 h1 {
   color: #232224;
   font-family: 'Sora', sans-serif;
@@ -281,7 +350,6 @@ p {
 
 .bold {
   font-weight: bold;
-  color: #FBFAF7;
 }
 
 strong {
@@ -393,12 +461,44 @@ a:hover {
   margin-bottom: 8px;
 }
 
+.py-1 {
+  padding-top: 8px;
+}
+
+.py-2 {
+  padding-top: 16px;
+}
+
+.py-3 {
+  padding-top: 48px;
+}
+
 .py-4 {
   padding-top: 72px;
 }
 
 .py-5 {
   padding-top: 128px;
+}
+
+.px-1 {
+  padding-bottom: 8px;
+}
+
+.px-2 {
+  padding-bottom: 16px;
+}
+
+.px-3 {
+  padding-bottom: 48px;
+}
+
+.px-4 {
+  padding-bottom: 72px;
+}
+
+.px-5 {
+  padding-bottom: 128px;
 }
 
 html {
@@ -837,6 +937,19 @@ header {
           transform: scale(1.05);
 }
 
+.icon {
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .div-card {
   -webkit-perspective: 500px;
           perspective: 500px;
@@ -1062,6 +1175,12 @@ header {
   opacity: 0;
   -webkit-animation: people 10s ease 8s infinite;
           animation: people 10s ease 8s infinite;
+}
+
+@media screen and (max-width: 960px) and (min-width: 340px) {
+  #people2 {
+    display: none;
+  }
 }
 
 @-webkit-keyframes people {

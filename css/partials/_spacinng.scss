@@ -19,9 +19,37 @@ $gap-5:128px;
 .mb-1{
     margin-bottom: $gap-1;
 }
+.py-1{
+    padding-top: $gap-1;
+}
+.py-2{
+    padding-top: $gap-2;
+}
+.py-3{
+    padding-top: $gap-3;
+}
+
 .py-4{
     padding-top: $gap-4;
 }
 .py-5{
     padding-top: $gap-5;
+}
+
+
+.px-1{
+    padding-bottom: $gap-1;
+}
+.px-2{
+    padding-bottom: $gap-2;
+}
+.px-3{
+    padding-bottom: $gap-3;
+}
+
+.px-4{
+    padding-bottom: $gap-4;
+}
+.px-5{
+    padding-bottom: $gap-5;
 }
