@@ -162,6 +162,28 @@
   }
 }
 
+.list-item {
+  list-style: none;
+  position: relative;
+  margin-top: 48px;
+  padding: 8px 8px 8px 72px;
+}
+
+.list-item strong {
+  color: #232224;
+}
+
+.list-item:after {
+  position: absolute;
+  top: 0;
+  left: -8px;
+  content: "";
+  display: block;
+  height: 64px;
+  width: 64px;
+  height: 64px;
+}
+
 h1 {
   color: #232224;
   font-family: 'Sora', sans-serif;
@@ -313,6 +335,42 @@ a:hover {
           transform: scale(1.02);
   -webkit-box-shadow: 0px 4px 80px rgba(130, 38, 158, 0.07), 0px 1.20588px 24.1177px rgba(130, 38, 158, 0.0456112), 0px 0.50086px 10.0172px rgba(130, 38, 158, 0.035), 0px 0.18115px 3.62304px rgba(130, 38, 158, 0.0243888);
           box-shadow: 0px 4px 80px rgba(130, 38, 158, 0.07), 0px 1.20588px 24.1177px rgba(130, 38, 158, 0.0456112), 0px 0.50086px 10.0172px rgba(130, 38, 158, 0.035), 0px 0.18115px 3.62304px rgba(130, 38, 158, 0.0243888);
+}
+
+.link {
+  display: inline-block;
+  color: #82269E;
+  background-image: url("../../svg/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  font-size: 18px;
+  padding: 16px 16px 16px 40px;
+  position: relative;
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 75%;
+  left: 56px;
+  background: #A950C4;
+  width: 0%;
+  height: 2px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  border-radius: 2px;
+}
+
+.link:hover {
+  opacity: 0.8;
+  padding-left: 64px;
+  background-position: 8px 50%;
+}
+
+.link:hover:after {
+  width: 100%;
+  border-radius: 2px;
 }
 
 .mx-1 {
@@ -730,6 +788,55 @@ header {
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
 }
 
+.bg-icon-mobile:after {
+  background-image: url("../../svg/icon-mobile.svg");
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.bg-icon-mobile:hover:after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-card:after {
+  background-image: url("../../svg/icon-card.svg");
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.bg-icon-card:hover:after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-check:after {
+  background-image: url("../../svg/icon-check.svg");
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  width: 40px;
+  height: 40px;
+  top: 16px;
+  left: 8px;
+}
+
+.bg-icon-check:hover:after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .div-card {
   -webkit-perspective: 500px;
           perspective: 500px;
@@ -918,6 +1025,66 @@ header {
   100% {
     -webkit-transform: translate3d(0, 30px, 0);
             transform: translate3d(0, 30px, 0);
+  }
+}
+
+.people1 {
+  opacity: 0;
+  -webkit-animation: people 10s ease 0s infinite;
+          animation: people 10s ease 0s infinite;
+}
+
+.people2 {
+  opacity: 0;
+  -webkit-animation: people 10s ease 5s infinite;
+          animation: people 10s ease 5s infinite;
+}
+
+.people3 {
+  opacity: 0;
+  -webkit-animation: people 10s ease 2s infinite;
+          animation: people 10s ease 2s infinite;
+}
+
+.people4 {
+  opacity: 0;
+  -webkit-animation: people 10s ease 7s infinite;
+          animation: people 10s ease 7s infinite;
+}
+
+.people5 {
+  opacity: 0;
+  -webkit-animation: people 10s ease 3s infinite;
+          animation: people 10s ease 3s infinite;
+}
+
+.people6 {
+  opacity: 0;
+  -webkit-animation: people 10s ease 8s infinite;
+          animation: people 10s ease 8s infinite;
+}
+
+@-webkit-keyframes people {
+  0% {
+    opacity: 0;
+  }
+  20%, 50% {
+    opacity: 1;
+  }
+  70%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes people {
+  0% {
+    opacity: 0;
+  }
+  20%, 50% {
+    opacity: 1;
+  }
+  70%, 100% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
