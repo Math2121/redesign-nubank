@@ -2,7 +2,7 @@
 <hr>
 
 <div align="center">
-<img src="img/demo.png" width="100%" height="100%">
+ <a href="https://sad-spence-473b1f.netlify.app"> Link de Deploy </a>
 </div>
 
 <hr>
