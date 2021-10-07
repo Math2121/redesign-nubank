@@ -42,13 +42,13 @@ $height-card: 0.64 * $width-card;
 
     0%,
     40% {
-        background-image: url('../../svg/nubank.svg');
+        background-image: url('../svg/nubank.svg');
         background-size: cover;
     }
 
     50%,
     100% {
-        background-image: url('../../svg/nubank-verse.svg');
+        background-image: url('../svg/nubank-verse.svg');
         background-size: cover;
     }
 }

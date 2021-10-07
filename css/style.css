@@ -220,7 +220,7 @@
           transform: translate(-50%, 0);
   width: 124px;
   height: 32px;
-  background-image: url("../../svg/entail.svg");
+  background-image: url("../svg/entail.svg");
   background-repeat: no-repeat;
 }
 
@@ -408,7 +408,7 @@ a:hover {
 .link {
   display: inline-block;
   color: #82269E;
-  background-image: url("../../svg/icon-arrow.svg");
+  background-image: url("../svg/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: 0% 50%;
   font-size: 18px;
@@ -936,7 +936,7 @@ header {
   width: 36px;
   height: 36px;
   cursor: pointer;
-  background-image: url("../../svg/icon-arrow.svg");
+  background-image: url("../svg/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -947,7 +947,7 @@ header {
   top: 24px;
   width: 36px;
   height: 36px;
-  background-image: url("../../svg/icon-arrow.svg");
+  background-image: url("../svg/icon-arrow.svg");
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center center;
@@ -967,23 +967,23 @@ header {
 }
 
 .photo-1 {
-  background-image: url("../../img/people1.png");
+  background-image: url("../img/people1.png");
 }
 
 .photo-2 {
-  background-image: url("../../img/people2.png");
+  background-image: url("../img/people2.png");
 }
 
 .photo-3 {
-  background-image: url("../../img/people3.png");
+  background-image: url("../img/people3.png");
 }
 
 .photo-4 {
-  background-image: url("../../img/people4.png");
+  background-image: url("../img/people4.png");
 }
 
 .photo-5 {
-  background-image: url("../../img/people5.png");
+  background-image: url("../img/people5.png");
 }
 
 .dropshadow {
@@ -991,8 +991,8 @@ header {
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
 }
 
-.bg-icon-mobile:after {
-  background-image: url("../../svg/icon-mobile.svg");
+.bg-icon-mobile::after {
+  background-image: url("../svg/icon-mobile.svg");
   background-size: cover;
   -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
@@ -1001,13 +1001,43 @@ header {
   transition: .5s ease;
 }
 
-.bg-icon-mobile:hover:after {
+.bg-icon-mobile:hover::after {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.bg-icon-card:after {
-  background-image: url("../../svg/icon-card.svg");
+.bg-icon-time::after {
+  background-image: url("../svg/icon-time.svg");
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.bg-icon-time:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-config::after {
+  background-image: url("../svg/icon-config.svg");
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.bg-icon-config:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-card::after {
+  background-image: url("../svg/icon-card.svg");
   background-size: cover;
   -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
@@ -1021,8 +1051,8 @@ header {
           transform: scale(1.05);
 }
 
-.bg-icon-check:after {
-  background-image: url("../../svg/icon-check.svg");
+.bg-icon-check::after {
+  background-image: url("../svg/icon-check.svg");
   background-size: cover;
   -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
@@ -1035,7 +1065,7 @@ header {
   left: 8px;
 }
 
-.bg-icon-check:hover:after {
+.bg-icon-check:hover::after {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -1113,12 +1143,12 @@ header {
 @-webkit-keyframes change-bg-card {
   0%,
   40% {
-    background-image: url("../../svg/nubank.svg");
+    background-image: url("../svg/nubank.svg");
     background-size: cover;
   }
   50%,
   100% {
-    background-image: url("../../svg/nubank-verse.svg");
+    background-image: url("../svg/nubank-verse.svg");
     background-size: cover;
   }
 }
@@ -1126,12 +1156,12 @@ header {
 @keyframes change-bg-card {
   0%,
   40% {
-    background-image: url("../../svg/nubank.svg");
+    background-image: url("../svg/nubank.svg");
     background-size: cover;
   }
   50%,
   100% {
-    background-image: url("../../svg/nubank-verse.svg");
+    background-image: url("../svg/nubank-verse.svg");
     background-size: cover;
   }
 }
