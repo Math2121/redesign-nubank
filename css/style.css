@@ -893,6 +893,7 @@ header {
   max-width: 1440px;
   margin: 0 auto;
   padding: 96px 24px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1098,8 +1099,8 @@ header {
           transform-origin: center center;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
-          animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
+  -webkit-animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
+          animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
 }
 
 @-webkit-keyframes flip-card {
@@ -1320,10 +1321,12 @@ header {
   0% {
     opacity: 0;
   }
-  20%, 50% {
+  20%,
+  50% {
     opacity: 1;
   }
-  70%, 100% {
+  70%,
+  100% {
     opacity: 0;
   }
 }
@@ -1332,11 +1335,217 @@ header {
   0% {
     opacity: 0;
   }
-  20%, 50% {
+  20%,
+  50% {
     opacity: 1;
   }
-  70%, 100% {
+  70%,
+  100% {
     opacity: 0;
+  }
+}
+
+.fignu2-screen1 {
+  -webkit-animation: fignu2-screen1 18s ease infinite alternate;
+          animation: fignu2-screen1 18s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu2-screen1 {
+  0%,
+  15% {
+    opacity: 1;
+  }
+  20%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fignu2-screen1 {
+  0%,
+  15% {
+    opacity: 1;
+  }
+  20%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.fignu2-screen2 {
+  -webkit-animation: fignu2-screen2 18s ease infinite alternate;
+          animation: fignu2-screen2 18s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu2-screen2 {
+  0%,
+  15% {
+    opacity: 0;
+  }
+  20%,
+  35% {
+    opacity: 1;
+  }
+  40%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fignu2-screen2 {
+  0%,
+  15% {
+    opacity: 0;
+  }
+  20%,
+  35% {
+    opacity: 1;
+  }
+  40%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.fignu2-screen3 {
+  -webkit-animation: fignu2-screen3 18s ease infinite alternate;
+          animation: fignu2-screen3 18s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu2-screen3 {
+  0%,
+  35% {
+    opacity: 0;
+  }
+  40%,
+  55% {
+    opacity: 1;
+  }
+  60%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fignu2-screen3 {
+  0%,
+  35% {
+    opacity: 0;
+  }
+  40%,
+  55% {
+    opacity: 1;
+  }
+  60%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.fignu2-screen4 {
+  -webkit-animation: fignu2-screen4 18s ease infinite alternate;
+          animation: fignu2-screen4 18s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu2-screen4 {
+  0%,
+  55% {
+    opacity: 0;
+  }
+  60%,
+  75% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fignu2-screen4 {
+  0%,
+  55% {
+    opacity: 0;
+  }
+  60%,
+  75% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.fignu2-screen5 {
+  -webkit-animation: fignu2-screen5 18s ease infinite alternate;
+          animation: fignu2-screen5 18s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu2-screen5 {
+  0%,
+  75% {
+    opacity: 0;
+  }
+  80%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fignu2-screen5 {
+  0%,
+  75% {
+    opacity: 0;
+  }
+  80%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.fignu2-icon1 {
+  -webkit-animation: fignu2-icon-move 3s ease 0s infinite alternate;
+          animation: fignu2-icon-move 3s ease 0s infinite alternate;
+}
+
+.fignu2-icon3 {
+  -webkit-animation: fignu2-icon-move 3s ease 2s infinite alternate;
+          animation: fignu2-icon-move 3s ease 2s infinite alternate;
+}
+
+.fignu2-icon5 {
+  -webkit-animation: fignu2-icon-move 3s ease 1s infinite alternate;
+          animation: fignu2-icon-move 3s ease 1s infinite alternate;
+}
+
+.fignu2-icon2 {
+  display: none;
+}
+
+.fignu2-icon4 {
+  display: none;
+}
+
+@-webkit-keyframes fignu2-icon-move {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(10px, -40px, 0);
+            transform: translate3d(10px, -40px, 0);
+  }
+}
+
+@keyframes fignu2-icon-move {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(10px, -40px, 0);
+            transform: translate3d(10px, -40px, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */
