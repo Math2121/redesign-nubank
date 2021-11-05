@@ -1,67 +1,84 @@
 a {
-    @include typeface-2(p2, desktop);
-    text-decoration: none;
-    transition: .5s ease;
-    color: $black-normal;
-    cursor: pointer;
+  @include typeface-2(p2, desktop);
+  text-decoration: none;
+  transition: 0.5s ease;
+  color: $black-normal;
+  cursor: pointer;
 
-    &:hover {
-        opacity: .9;
-    }
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .btn {
-    background: linear-gradient(220.94deg, $secondary-normal 14.43%, $primary-normal 85.28%);
-    border-radius: 16px;
-    margin-right: 1rem;
-    transition: .3s ease;
-    padding: 12px 32px;
-    color: $white-light;
-    box-shadow: 0px 17px 17px rgba(169, 80, 196, 0.13), 0px 5.125px 5.125px rgba(169, 80, 196, 0.0847066), 0px 2.12866px 2.12866px rgba(169, 80, 196, 0.065), 0px 0.769896px 0.769896px rgba(169, 80, 196, 0.0452935);
+  background: linear-gradient(
+    220.94deg,
+    $secondary-normal 14.43%,
+    $primary-normal 85.28%
+  );
+  border-radius: 16px;
+  margin-right: 1rem;
+  transition: 0.3s ease;
+  padding: 12px 32px;
+  color: $white-light;
+  box-shadow: 0px 17px 17px rgba(169, 80, 196, 0.13),
+    0px 5.125px 5.125px rgba(169, 80, 196, 0.0847066),
+    0px 2.12866px 2.12866px rgba(169, 80, 196, 0.065),
+    0px 0.769896px 0.769896px rgba(169, 80, 196, 0.0452935);
 
-    &:hover {
-        transform: scale(1.02);
-        box-shadow: 0px 4px 80px rgba(130, 38, 158, 0.07), 0px 1.20588px 24.1177px rgba(130, 38, 158, 0.0456112), 0px 0.500862px 10.0172px rgba(130, 38, 158, 0.035), 0px 0.181152px 3.62304px rgba(130, 38, 158, 0.0243888);
-    }
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 80px rgba(130, 38, 158, 0.07),
+      0px 1.20588px 24.1177px rgba(130, 38, 158, 0.0456112),
+      0px 0.500862px 10.0172px rgba(130, 38, 158, 0.035),
+      0px 0.181152px 3.62304px rgba(130, 38, 158, 0.0243888);
+  }
 }
 
 .link {
-    display: inline-block;
-    color: $primary-normal;
-    background-image: url('../svg/icon-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: 0% 50%;
+  display: inline-block;
+  color: $primary-normal;
+  background-image: url("../svg/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
 
-    font-size: 18px;
-    padding: 16px 16px 16px 40px;
-    position: relative;
+  font-size: 18px;
+  padding: 16px 16px 16px 40px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 75%;
+
+    left: 56px;
+    background: $secondary-normal;
+
+    width: 0%;
+
+    height: 2px;
+    transition: 0.5s ease;
+    border-radius: 2px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    padding-left: 64px;
+    background-position: 8px 50%;
 
     &:after {
-        content: '';
-        position: absolute;
-        display: block;
-        top: 75%;
-
-        left: 56px;
-        background: $secondary-normal;
-
-        width: 0%;
-
-        height: 2px;
-        transition: .5s ease;
-        border-radius: 2px;
+      width: 100%;
+      border-radius: 2px;
     }
-
-    &:hover {
-        opacity: 0.8;
-        padding-left: 64px;
-        background-position: 8px 50%;
-
-        &:after {
-
-            width: 100%;
-            border-radius: 2px;
-        }
-
-    }
+  }
+}
+.button-app {
+  transition: 0.5s ease;
+  &:hover {
+    filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08))
+      drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271))
+      drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04))
+      drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+  }
 }
