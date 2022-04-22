@@ -8,7 +8,7 @@
 <hr>
 
 ## Progresso
-[##] 10%
+[##] 100%
 
 ## 🚀 Techs
  [x] JS <br>
